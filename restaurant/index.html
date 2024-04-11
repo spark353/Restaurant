@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+            integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a class="navbar-brand"><img src="logo.png" style="width: 23rem; height: 6rem"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-stream navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#banner">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured-services">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact1">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section id="banner" class="section">
+    <div class="container-fluid py-5">
+        <div class="container my-5 py-3">
+            <div class="row align-items-center ">
+                <div class="col-md-6">
+                    <h1 id="title-main">Descubra o prazer da nossa cozinha</h1>
+                    <p id="text-main">“Venha embarcar numa viagem culinária inesquecível, saboreando a autêntica e
+                        deliciosa comida
+                        regional do Algarve, preparada com amor e ingredientes frescos da nossa terra.”</p>
+                    <div class="mt-4">
+                        <button class="main-btn">Reservar já</button>
+                    </div>
+                </div>
+                <div class=" col-md-6 text-center text-lg-end ">
+                    <img src="seafood.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="featured-services" class="section">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col md 6 col-lg-3 d-flex align-items-stretch mb-lg-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="fa fa-cutlery" aria-hidden="true"></i>
+                        <h4 class="title"><a href="">Qualidade</a></h4>
+                        <p class="description"> Nosso objetivo é oferecer pratos de alta qualidade, preparados com os
+                            melhores ingredientes e apresentados com um toque de elegância.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col md 6 col-lg-3 d-flex align-items-stretch mb-lg-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <h4 class="title"><a href="">Inovação</a></h4>
+                        <p class="description"> Embora estejamos profundamente enraizados na tradição, também estamos
+                            sempre procurando maneiras inovadoras de apresentar a cozinha Algarvia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col md 6 col-lg-3 d-flex align-items-stretch mb-lg-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon"><i class="fa fa-leaf" aria-hidden="true"></i>
+                        <h4 class="title"><a href="">Sustentabilidade</a></h4>
+                        <p class="description"> Estamos comprometidos com práticas sustentáveis,
+                            utilizando ingredientes locais e apoiando a economia local sempre que possível.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col md 6 col-lg-3 d-flex align-items-stretch mb-lg-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="fa fa-check" aria-hidden="true"></i>
+                        <h4 class="title"><a href="">Autenticidade</a></h4>
+                        <p class="description"> Nosso compromisso é com a verdadeira cozinha Algarvia. Utilizamos
+                            receitas tradicionais e ingredientes locais para trazer a você a experiência mais autêntica
+                            possível.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5 banner">
+        <div class="container my-5 py-3">
+            <div class="row align-items-center ">
+                <div class="col-md-6">
+                    <img src="plate_seafood.jpg" class="img-fluid">
+                </div>
+                <div class=" col-md-6 text-center text-lg-end ">
+                    <h1 id="title-about">Sobre nós</h1>
+                    <p id="text-about">Bem-vindo ao Restaurante Onda Aroma, o seu destino para a autêntica cozinha
+                        Algarvia. Situado no coração do belo
+                        Algarve, o nosso restaurante é um tributo à rica tapeçaria de sabores e aromas que definem esta
+                        região
+                        encantadora.
+
+                        No Onda Aroma, acreditamos que a comida é mais do que apenas uma refeição - é uma experiência. É
+                        por isso que
+                        nos dedicamos a criar pratos que capturam a essência do Algarve, utilizando ingredientes frescos
+                        e locais para
+                        trazer a verdadeira cozinha Algarvia à sua mesa.
+
+                        No Restaurante Onda Aroma, convidamos você a juntar-se a nós para uma refeição que é mais do que
+                        apenas comida.
+
+                        Venha desfrutar da nossa hospitalidade, saborear a nossa cozinha, e deixe-nos levá-lo numa
+                        viagem inesquecível
+                        através do Algarve. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="menu">
+    <div class="menu-tab-wp">
+        <div class="row">
+            <div class="col-lg-12 m-auto">
+                <div class="menu-tab text-center">
+                    <ul class="filters">
+                        <div class="filter-active"></div>
+                        <li class="filter" data-filter=".entradas">
+                            <img src="./icons/menu.png">
+                            Entradas
+                        </li>
+                        <li class="filter" data-filter=".peixe">
+                            <img src="./icons/fish.png">
+                            Peixe
+                        </li>
+                        <li class="filter" data-filter=".marisco">
+                            <img src="./icons/lobster.png">
+                            Marisco
+                        </li>
+                        <li class="filter" data-filter=".sobremesa">
+                            <img src="./icons/cake.png">
+                            Sobremesas
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-list-row">
+        <div class="row g-xxl-5 bydefault_show" id="menu-dish">
+            <div class="col-lg-4 col-sm-6 dish-box-wp entradas" data-cat="entradas">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/starters/ameijoas.jpg">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Ameijoa á bulhão de pato</h3>
+                        <p>Deliciosas amêijoas frescas cozidas em azeite, alho, coentros e um toque de limão.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€12,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 dish-box-wp entradas" data-cat="entradas">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/starters/salada_camarao.jpg">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Salada de Camarão</h3>
+                        <p>Mexilhões frescos cozidos em um caldo de vinho branco, alho e salsa.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€10,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 dish-box-wp entradas" data-cat="entradas">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/starters/salada_polvo.jpg">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Salada de polvo</h3>
+                        <p>Polvo cozido e fatiado, servido frio com cebola, pimentos, azeitonas e um molho de azeite e
+                            vinagre.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€9,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 dish-box-wp entradas" data-cat="entradas">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/starters/camarao_alho.jpg">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Camarões com alho e colorau</h3>
+                        <p>Camarões salteados com alho e colorau para um sabor rico e picante2.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€20,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 dish-box-wp entradas" data-cat="entradas">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/starters/bivalves.jpg">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Mexilhões á marinheira</h3>
+                        <p>Mexilhões frescos cozidos em um caldo de vinho branco, alho e salsa.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€9,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 dish-box-wp peixe" data-cat="peixe">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/fish/bacalhau_espinafres.jpg">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Bacalhau com espinafres</h3>
+                        <p>Uma combinação clássica de bacalhau e espinafres, perfeita para um prato principal
+                            reconfortante2.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€23,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 dish-box-wp peixe" data-cat="peixe">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/fish/sardinha.png">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Sardinhas Assadas</h3>
+                        <p>Durante o verão, as sardinhas frescas são um must-have. Tempere com sal grosso, grelhe na
+                            brasa e sirva com salada e batatas cozidas.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€23,00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 dish-box-wp peixe" data-cat="peixe">
+                <div class="dish-box text-center">
+                    <div class="dist-img">
+                        <img src="dishes/fish/polvo_lagareiro.png">
+                    </div>
+                    <div class="dish-title">
+                        <h3 class="h3-title">Polvo á Lagareiro</h3>
+                        <p>O polvo é cozido até ficar tenro e depois grelhado com muito azeite, alho e batatas. Um prato
+                            simples, mas cheio de sabor.</p>
+                    </div>
+                    <div class="dish-info">
+                        <p>€23,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container p-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4 text-capitalize">Galeria</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-3">
+                <img src="gallery/casamento.png" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg-6 mb-3">
+                <img src="gallery/catering.png" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg-8 mb-3">
+                <img src="gallery/catering1.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-lg-4 px-0">
+                <div class="col-lg-12 mb-3">
+                    <img src="gallery/catering2.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <img src="gallery/private_event.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="contact1">
+    <footer class="site-footer" id="contact">
+        <div class="top-footer section">
+            <div class="sec-wp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-info">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img src="logo.png" style="width: 20rem;height: 7rem">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <ul class="social-icons">
+                                        <li><a class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a class="linkedin"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="footer-flex-box">
+                                <div class="footer-table-info">
+                                    <h3 class="h3-title">Abertura</h3>
+
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    Segunda a Sábado : 18:00H - 23:00H
+
+                                </div>
+                                <div class="footer-menu food-nav-menu">
+                                    <h3 class="h3-title">Links</h3>
+                                    <ul class="column-2">
+                                        <li>
+                                            <a href="#home" class="footer-active-menu">Home</a>
+                                        </li>
+                                        <li><a href="#about">Sobre nós</a></li>
+                                        <li><a href="#menu">Menu</a></li>
+                                        <li><a href="#gallery">Galeria</a></li>
+                                        <li><a href="#contact">Contacto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-menu">
+                                    <h3 class="h3-title">Empresa</h3>
+                                    <ul>
+                                        <li><a href="#">Termos e Condições</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024<span class="name">TechCode</span>Todos os direitos reservados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
